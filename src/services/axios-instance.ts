@@ -1,5 +1,5 @@
 import axios, { AxiosError } from "axios";
-const backendApiUrl = process.env.REACT_APP_SMARTCUBICLE_BACKEND_API_URL
+const backendApiUrl = process.env.REACT_APP_SHADI_BACKEND_API_URL
 
 const axiosInstance = axios.create({
     baseURL: backendApiUrl

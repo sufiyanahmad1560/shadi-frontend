@@ -49,8 +49,8 @@ const hero_slider_data: SliderDataType[] = [
 	{
 		id: 1,
 		bg_img: "slider_bg_1",
-		sub_title: "We are here for your care.",
-		title: "Best Care & Better Doctor.",
+		sub_title: "Matrimonial Search.",
+		title: "Best Matching Couples.",
 		sm_info: "We believe in the power of natural healing through homeopathy. Our dedicated team of experienced homeopathic practitioners is committed to providing personalized and effective healthcare that goes beyond just treating symptoms.",
 	},
 	{
@@ -111,7 +111,7 @@ const HeroSliderHomeOne = () => {
 													</div>
 													<div className="hero-slider-btn">
 														<Link data-animation="fadeInLeft"
-															data-delay=".6s" to="/appointment" className="btn btn-icon ml-0"><span>+</span>Make Appointment</Link>
+															data-delay=".6s" to="/register" className="btn btn-icon ml-0"><span>+</span>Register</Link>
 														<Link data-animation="fadeInRight"
 															data-delay="1.0s"
 															to={""}

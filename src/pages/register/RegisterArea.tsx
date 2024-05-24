@@ -3,7 +3,7 @@ import { ToastContainer, toast } from 'react-toastify';
 
 import { Link } from 'react-router-dom';
 
-import { useFormik } from 'formik';
+import { useFormik, Form, Field, ErrorMessage } from 'formik';
 import { useEffect, useState } from 'react';
 import LoadingOverlay from '../../compoments/common/LoadingOverlay';
 import { useAuth } from '../../context/AuthContext';
@@ -42,6 +42,8 @@ const validate = (values: RegisterFormValue) => {
 
   if (!values.mobile) {
     errors.mobile = 'Required';
+  } else if (!/^\d{10}$/.test(values.mobile)) {
+    errors.mobile = 'Mobile number must be a 10-digit number';
   } else if (values.mobile.length > 10) {
     errors.mobile = 'Mobile number must be 10 digits';
   } else if (values.mobile.length < 10) {
@@ -62,6 +64,8 @@ const validate = (values: RegisterFormValue) => {
 
   return errors;
 };
+
+
 
 
 const RegisterArea = () => {
@@ -139,7 +143,7 @@ const RegisterArea = () => {
           <div className="row">
             <div className="col-lg-8 offset-lg-2">
               <div className="basic-login">
-                <h3 className="text-center mb-60">Signup From Here</h3>
+                <h3 className="text-center mb-60">Register From Here</h3>
                 <form onSubmit={formik.handleSubmit}>
                   <label htmlFor="username-id">Name <span>**</span></label>
                   <input id="username-id" type="text" name='name' value={formik.values.name} onChange={formik.handleChange}
@@ -147,7 +151,7 @@ const RegisterArea = () => {
                   <p className="form_error-2">{formik.errors.name ? formik.errors.name : null}</p>
 
                   <label htmlFor="mobile">Mobile Number <span>**</span></label>
-                  <input id="mobile" type="text" name="mobile" value={formik.values.mobile} onChange={formik.handleChange}
+                  <input id="mobile" type="text" name="mobile" maxLength={10} value={formik.values.mobile} onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     placeholder="Enter Mobile number..." />
                   <p className="form_error-2">{formik.errors.mobile ? formik.errors.mobile : null}</p>
