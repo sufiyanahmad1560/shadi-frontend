@@ -1,0 +1,398 @@
+/* Routine */
+// .routine__table .table thead th,
+// .routine__table .table tbody th,
+// .routine__table .table tbody td {
+//     vertical-align: bottom;
+//     padding: 30px 20px;
+//     text-align: center;
+//     line-height: 1;
+//     font-size: 18px;
+//     color: #223645;
+//     font-weight: 700;
+//     background: #fff;
+//     border: 2px solid;
+//     font-family: 'Poppins', sans-serif;
+//     letter-spacing: -0.03em;
+//     min-width: 167px;
+// }
+
+.routine__table {
+    .table {
+
+        thead th,
+        tbody th,
+        tbody td {
+            vertical-align: bottom;
+            padding: 4px;
+            text-align: center;
+            font-size: 12px;
+            color: #223645;
+            font-weight: 700;
+            background: #fff;
+            border: 2px solid;
+            font-family: 'Poppins', sans-serif;
+            letter-spacing: -0.03em;
+            min-width: auto;
+        }
+
+        thead th {
+            .routine--time__day {
+                margin-bottom: 5px;
+            }
+
+            .routine--time__date {
+                font-weight: normal;
+                // font-size: 12px;
+            }
+        }
+
+        tbody td {
+            background-color: rgba(21, 40, 55, 0.50);
+            padding: 5px;
+
+            .active-doctor {
+                background: #8fb569;
+            }
+
+            .doctor--routine__wrapper {
+                div {
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: #223645;
+                }
+
+            }
+
+        }
+    }
+}
+
+.routine__bg::before {
+    position: absolute;
+    content: "";
+    background-color: rgba(34, 54, 69, 0.90);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+
+
+.routine__table .table tbody td.active-doctor {
+    background: #8fb569;
+    cursor: pointer;
+    transition: transform .2s;
+    position: relative;
+
+    /* Animation */
+    i {
+        position: absolute;
+        display: none;
+        top: -5px;
+        right: -5px;
+        background-color: #c80039;
+        border-radius: 50%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    &:hover {
+        z-index: 100;
+        transform: scale(1.2);
+        /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-color: #e12454;
+
+        .doctor--routine__wrapper div {
+            color: white;
+        }
+    }
+}
+
+.routine__table {
+    .table {
+        tbody {
+            .clicked-cell {
+                z-index: 100;
+                transform: scale(1.2);
+                /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                background-color: #cf1c4a !important;
+
+                i {
+                    color: white;
+                    display: inline-block !important;
+                }
+
+                .doctor--routine__wrapper div {
+                    color: white;
+                }
+            }
+
+            .booked-slot {
+                pointer-events: none;
+
+                i {
+                    display: none !important;
+                }
+
+                .doctor--routine__wrapper div {
+                    color: #647589;
+                    rotate: -30deg;
+                    margin-bottom: 10px;
+                }
+            }
+
+        }
+    }
+
+
+}
+
+.routine__bg {
+    background-size: cover;
+    background-position: center center;
+}
+
+.form-one {
+    .form-heading {
+        margin: 50px 0px 20px 0px;
+    }
+
+    .selected-date {
+        margin-bottom: 15px;
+
+        .label {
+            font-size: 15px;
+        }
+
+        .success {
+            color: #8fb569;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        .error {
+            color: #c80039;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+
+        }
+    }
+
+    .filler {
+        margin: 32px 0px;
+    }
+}
+
+
+.shtable {
+    min-width: 1000px;
+
+    .shtable__head {
+        tr {
+            th {
+                border: none;
+                // background: #13232f;
+                background: transparent;
+                color: white;
+                padding: 1.5rem 0.5rem;
+            }
+        }
+    }
+
+    .shtable__body {
+        tr {
+            td {
+                border: none;
+                background: transparent;
+                color: rgba(255, 255, 255, 0.3);
+                padding: 1.5rem 0.5rem;
+                font-size: 16px;
+            }
+
+            &:nth-child(odd) {
+                background: rgba(0, 0, 0, 0.1);
+
+            }
+
+            &:hover {
+                td {
+                    color: white;
+                }
+
+                .highlight {
+                    color: #8fb569;
+                }
+            }
+        }
+
+
+    }
+
+}
+
+.shtable-responsive {
+    &::-webkit-scrollbar {
+        height: 8px;
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        /* box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+        background: rgb(243 246 255);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: gray;
+    }
+}
+
+.norecord {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 125px 50px;
+    text-align: center;
+
+    p {
+        font-size: 50px !important;
+        font-style: italic !important;
+        color: rgba(255, 255, 255, 0.2);
+    }
+
+}
+
+
+/* Normal desktop :1500px. */
+@media (min-width: 1500px) {
+    .routine__table {
+        .table {
+
+            thead th,
+            tbody td {
+                font-size: 14px;
+            }
+
+            thead th {
+                padding: 15px 4px;
+            }
+
+            tbody td {
+                padding: 13px 4px;
+
+                .doctor--routine__wrapper {
+                    div {
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .routine__table {
+        .table {
+
+            thead th,
+            tbody td {
+                font-size: 14px;
+            }
+
+            thead th {
+                padding: 15px 4px;
+            }
+
+            tbody td {
+                padding: 13px 4px;
+
+                .doctor--routine__wrapper {
+                    div {
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    .routine__table {
+        .table {
+
+            thead th,
+            tbody td {
+                font-size: 16px;
+            }
+
+            thead th {
+                padding: 15px;
+            }
+
+            tbody td {
+                padding: 15px;
+
+                .doctor--routine__wrapper {
+                    div {
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .routine__table {
+        .table {
+
+            thead th,
+            tbody td {
+                font-size: 14px;
+            }
+
+            thead th {
+                padding: 15px;
+            }
+
+            tbody td {
+                padding: 10px;
+
+                .doctor--routine__wrapper {
+                    div {
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 992px) {}
+
+
+// tablet size
+@media (max-width: 991px) {}
+
+
+/* small mobile :320px. */
+@media (max-width: 767px) {}
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}

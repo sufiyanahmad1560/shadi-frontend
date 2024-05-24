@@ -1,0 +1,115 @@
+.calculate-section .section-text p {
+    font-size: 30px;
+    color: #b4c8d7;
+    line-height: 42px;
+    padding-right: 35px;
+    max-width: 680px;
+}
+
+.calculate-content {
+    padding: 15px;
+    background: #fff;
+    padding-bottom: 0;
+}
+
+.calculate-box {
+    .nice-select {
+        width: 100%;
+        height: 50px;
+        padding-top: 14px;
+        border-radius: 0;
+        border: 2px solid #eee7ff;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-bottom: 20px;
+
+        .current-value {
+            color: #647589;
+        }
+
+        .current-placeholder {
+            color: #c7d4e6;
+        }
+
+        &::after {
+            margin-right: 5px;
+            margin-top: -10px;
+        }
+
+        .list {
+            width: 100%;
+            border-radius: 0;
+            max-height: 300px;
+            overflow-y: auto;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+            &::-webkit-scrollbar {
+                height: 8px;
+                width: 4px;
+            }
+
+            &::-webkit-scrollbar-track {
+                /* box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+                background: rgb(243 246 255);
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: gray;
+            }
+        }
+    }
+
+    .nice-select-error {
+        border: 2px solid #fe4536;
+    }
+}
+
+
+
+.calculate-form {
+    position: relative;
+
+    input {
+        height: 50px;
+        padding-left: 16px;
+        width: 100%;
+        border: 2px solid #eee7ff;
+        position: relative;
+
+        &::placeholder {
+            color: #c7d4e6;
+        }
+    }
+
+    i {
+        position: absolute;
+        top: 20px;
+        right: 16px;
+    }
+}
+
+.calculate-form-error {
+
+    input {
+        border: 2px solid #fe4536;
+    }
+
+    i {
+        color: #fe4536
+    }
+}
+
+.calculate-box button {
+    width: 100%;
+}
+
+
+.calculate_wrapper {
+    position: relative;
+    z-index: 99;
+}
+
+.form-select:focus {
+    border-color: #eee7ff;
+    box-shadow: none;
+}

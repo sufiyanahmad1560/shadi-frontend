@@ -1,0 +1,375 @@
+/* 13. Appointment */
+.appointment-section {
+    background-size: cover;
+    background-position: center top;
+}
+
+.appointment-content span {
+    font-size: 18px;
+    font-weight: 500;
+    color: #e12454;
+}
+
+.appointment-box.white {
+    background-color: #fff;
+}
+
+.appointment-content {
+    padding-top: 55px;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+.appointment-content h1 {
+    font-size: 50px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+.appointment-box .primary_btn {
+    width: 100%;
+}
+
+.professinals-list li {
+    line-height: 28px;
+    color: #697a8d;
+    margin-bottom: 20px;
+}
+
+.professinals-list li i {
+    width: 30px;
+    height: 30px;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 50%;
+    color: #8fb569;
+    margin-right: 20px;
+    float: left;
+    border: 2px solid #8fb569;
+    font-size: 12px;
+    transition: .4s;
+}
+
+.professinals-list li:hover i {
+    background: #8fb569;
+    color: #fff;
+}
+
+/* 16. Appointment */
+.appointment-box-2 {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 16px 32px 0px rgba(223, 217, 255, 0.4);
+    margin-top: -241px;
+}
+
+.appointment-box-content {
+    padding: 70px 38px 40px 70px;
+}
+
+.appointment-form-3 {
+    position: relative;
+
+    textarea {
+        width: 100%;
+        resize: none;
+        border: 2px solid #d3e2f0;
+        padding-top: 10px;
+        padding-left: 16px;
+        padding-right: 16px;
+        color: #647589;
+        height: 70px;
+
+        &::placeholder {
+            color: #c7d4e6;
+        }
+    }
+
+    i {
+        position: absolute;
+        top: 15px;
+        right: 16px;
+    }
+}
+
+.appointment-form-3-error {
+    textarea {
+        border: 2px solid #fe4536;
+    }
+
+    i {
+        color: #fe4536
+    }
+}
+
+.appointment-area-3 .calculate-box .nice-select {
+    border: 2px solid #d3e2f0;
+}
+
+.appointment-area-3 .calculate-form input {
+    border: 2px solid #d3e2f0;
+}
+
+.appointment-form-2 input {
+    width: 100%;
+}
+
+.appointment-form-2 input {
+    width: 100%;
+    border: 0;
+    padding: 0;
+    padding-top: 5px;
+}
+
+.appointment-form-2 input::placeholder {
+    font-size: 24px;
+    color: #223645;
+    font-weight: 600;
+    font-family: poppins;
+}
+
+.appoint-ment-icon {
+    margin-right: 40px;
+}
+
+.appointment-form-2 label {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #aab6bf;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+.appointment-form-box {
+    padding-bottom: 27px;
+    border-bottom: 1px solid #eae5ff;
+}
+
+.appointment-form-box-option {
+    padding-bottom: 8px;
+}
+
+.nice-select.postform::after {
+    border-bottom: 3px solid #223645;
+    border-right: 3px solid #223645;
+    content: '';
+    display: block;
+    height: 8px;
+    margin-top: -23px;
+    pointer-events: none;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    -webkit-transform-origin: 66% 66%;
+    -ms-transform-origin: 66% 66%;
+    transform-origin: 66% 66%;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    width: 8px;
+}
+
+.appointment_page_bg {
+    background: url("");
+    background-repeat: no-repeat;
+}
+
+.calculate-content .select_style {
+    border: 2px solid #d3e2f0;
+}
+
+
+.appointment-form-box form select {
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: block;
+    cursor: pointer;
+    padding-right: 10px;
+
+    & option {
+        border: none;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 15px 0;
+    }
+}
+
+.appointment-filter {
+    .label {
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .filter-date {
+        // line-height: 45px;
+        padding: 6px;
+    }
+}
+
+.filter-btn {
+    color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+    padding: 6px;
+    font-size: 14px;
+    margin-top: 6px;
+
+    &:hover {
+        background-color: #e12454;
+        color: white;
+    }
+}
+
+
+.doctor-dd {
+    margin-top: 0px;
+}
+
+.routine__container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.error-msg {
+    color: #fe4536;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+
+.prescription-card {
+    .prescription-detail {
+        min-height: 100px;
+
+        .doc-name {
+            margin-top: auto;
+        }
+    }
+}
+
+/* Normal desktop :1500px. */
+@media (min-width: 1500px) {
+    .doctor-dd {
+        margin-top: 50px;
+    }
+
+    .routine__container {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .appointment-filter {
+        .label {
+            font-size: 16px;
+        }
+
+
+
+        .filter-date {
+            padding: 12px;
+        }
+    }
+
+    .filter-btn {
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    .prescription-card {
+        .doc-name {
+            font-size: 11px
+        }
+    }
+}
+
+
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .doctor-dd {
+        margin-top: 50px;
+    }
+
+    .routine__container {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .appointment-filter {
+        .label {
+            font-size: 16px;
+        }
+
+
+
+        .filter-date {
+            padding: 12px;
+        }
+    }
+
+    .filter-btn {
+        text-decoration: none;
+        padding: 10px;
+    }
+}
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .doctor-dd {
+        margin-top: 50px;
+    }
+
+    .appointment-filter {
+        .label {
+            font-size: 16px;
+        }
+
+        .filter-date {
+            padding: 12px;
+        }
+    }
+
+    .filter-btn {
+        text-decoration: none;
+        padding: 10px;
+    }
+}
+
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .appointment-filter {
+        .label {
+            font-size: 16px;
+        }
+
+        .filter-date {
+            padding: 12px;
+        }
+    }
+
+    .filter-btn {
+        text-decoration: none;
+        padding: 10px;
+    }
+
+}
+
+
+@media (min-width: 992px) {}
+
+
+// tablet size
+@media (max-width: 991px) {}
+
+
+/* small mobile :320px. */
+@media (max-width: 767px) {}
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}

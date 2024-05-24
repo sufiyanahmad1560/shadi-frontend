@@ -1,0 +1,180 @@
+@import 'assets/css/all.min.css';
+@import 'assets/css/animate.min.css';
+@import 'assets/css/bootstrap.min.css';
+@import 'assets/css/default.css';
+@import 'assets/css/font-awesome-pro.css';
+@import 'assets/css/magnific-popup.css';
+@import 'assets/css/meanmenu.css';
+@import 'assets/css/nice-select.css';
+// @import 'assets/css/owl.carousel.min.css';
+@import 'assets/css/responsive.css';
+@import 'assets/css/slick.css';
+@import 'assets/css/style.css';
+
+
+@import "../node_modules/react-modal-video/css/modal-video.css";
+@import "../node_modules/react-18-image-lightbox/src/style.css";
+@import "../node_modules/owl.carousel/dist/assets/owl.carousel.min.css";
+@import 'react-toastify/dist/ReactToastify.css';
+
+
+@import "slick-carousel/slick/slick.css";
+@import "~bootstrap/dist/css/bootstrap";
+
+/*
+
+  Theme Name: Beat - Medical and Health HTML5 Template
+  Author: amarhusain
+  Support: amar.husain156@gmail.com
+  Description: Medical and Health HTML5 Template
+  Version: 1.0
+
+*/
+
+
+/* CSS Index
+
+-----------------------------------
+
+1. Theme default css
+
+2. Header
+
+3. Slider
+
+4. About
+
+5. Section Title
+
+6. Services
+
+7. Team
+
+8. Fact
+
+9. Pricing
+
+10. CTA
+
+11. Footer
+
+12. Counter
+
+13. Appointment
+
+14. Testimonials
+
+15. Analysis
+
+16. Appointment
+
+17. Membership
+
+18. FAQ
+
+19. Blog
+
+20. Contact
+
+21. Shop
+
+22. Cart
+
+23. Checkout
+
+24. Login
+
+25. Portfolio
+
+26. Preloader
+
+*/
+
+// @import 'variables';
+@import 'assets/scss/common';
+@import 'assets/scss/default';
+@import 'assets/scss/header';
+@import 'assets/scss/sh-responsive';
+@import 'assets/scss/hero';
+@import 'assets/scss/slider';
+@import 'assets/scss/about';
+@import 'assets/scss/sectionTitle';
+@import 'assets/scss/services';
+@import 'assets/scss/fact';
+@import 'assets/scss/pricing';
+@import 'assets/scss/faq';
+@import 'assets/scss/cta';
+@import 'assets/scss/blog';
+@import 'assets/scss/breadcrumb';
+@import 'assets/scss/counter';
+@import 'assets/scss/testimonial';
+@import 'assets/scss/appointment';
+@import 'assets/scss/analysis';
+@import 'assets/scss/calculate';
+@import 'assets/scss/hiring';
+@import 'assets/scss/widget';
+@import 'assets/scss/features';
+@import 'assets/scss/news_letter';
+@import 'assets/scss/membership';
+@import 'assets/scss/contact';
+@import 'assets/scss/shop';
+@import 'assets/scss/cart';
+@import 'assets/scss/checkout';
+@import 'assets/scss/login';
+@import 'assets/scss/gallery';
+@import 'assets/scss/team';
+@import 'assets/scss/preloader';
+@import 'assets/scss/update_css';
+@import 'assets/scss/home_five';
+@import 'assets/scss/table';
+@import 'assets/scss/tab';
+@import 'assets/scss/footer';
+@import 'assets/scss/responsive';
+@import 'assets/scss/customdropdown';
+@import 'assets/scss/prescription';
+
+// * {
+//   font-family: Inter;
+// }
+
+// body {
+//   margin: 0;
+
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
+
+// code {
+//   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+//     monospace;
+// }
+
+
+.card-redbg {
+  background-color: red;
+}
+
+
+
+// /* Normal desktop :1500px. */
+// @media (min-width: 1500px) {}
+
+// /* Normal desktop :1200px. */
+// @media (min-width: 1200px) and (max-width: 1500px) {}
+
+// /* Normal desktop :992px. */
+// @media (min-width: 992px) and (max-width: 1200px) {}
+
+// /* Tablet desktop :768px. */
+// @media (min-width: 768px) and (max-width: 991px) {}
+
+// @media (min-width: 992px) {}
+
+// // tablet size
+// @media (max-width: 991px) {}
+
+// /* small mobile :320px. */
+// @media (max-width: 767px) {}
+
+// /* Large Mobile :480px. */
+// @media only screen and (min-width: 480px) and (max-width: 767px) {}

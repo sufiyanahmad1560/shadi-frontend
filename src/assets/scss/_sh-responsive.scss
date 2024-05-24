@@ -1,0 +1,78 @@
+[type="date"]::-webkit-calendar-picker-indicator {
+    //   opacity: 0;
+    margin-right: 25px;
+    font-size: 18px;
+    color: #647589;
+}
+
+.menu_wrapper {
+    position: relative;
+}
+
+.shvideo__heading {
+    max-width: 598px;
+    .shvideo__heading-main h2,
+
+    .shvideo__heading-sub {
+        color: white;
+    }
+
+    .shvideo__heading-sub {
+        font-size: 16px;
+    }
+}
+
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {}
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {}
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (min-width: 992px) {}
+
+
+// tablet size
+@media (max-width: 991px) {}
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+    .header-menu-area {
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        .logo {
+
+            img {
+                height: 50px;
+            }
+
+        }
+
+        .logo-header-2 {
+            img {
+                height: 30px;
+                width: 250px;
+            }
+        }
+    }
+
+    .sticky_menu {
+        .logo-header-2 {
+            img {
+                width: 195px;
+            }
+        }
+    }
+
+    .sh-counter {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}

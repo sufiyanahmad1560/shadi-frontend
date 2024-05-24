@@ -1,0 +1,49 @@
+/* page-title */
+.breadcrumb-bg {
+    background-size: cover;
+    background-position: center center;
+
+    .small-text {
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    h2 {
+        color: white !important;
+    }
+}
+
+.small-text {
+    color: #647589;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.page-title h2 {
+    font-size: 60px;
+}
+
+.page-height {
+    min-height: 500px;
+}
+
+.page-breadcumb nav ol {
+    background: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.page-breadcumb .breadcrumb-item a {
+    color: white;
+    font-weight: 500;
+}
+
+.page-breadcumb .breadcrumb-item.active {
+    font-weight: 500;
+    color: #e12454;
+}
+
+.page-breadcumb .breadcrumb-item+.breadcrumb-item::before {
+    content: "|";
+}

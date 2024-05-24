@@ -1,0 +1,114 @@
+/* src/components/CustomDropdown.css */
+.custom-dropdown {
+    position: relative;
+    width: 100%;
+}
+
+.selected-option {
+    position: relative;
+    display: flex;
+    box-sizing: content-box;
+    align-items: center;
+    padding: 8px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    height: 45px;
+    font-size: 15px;
+    background-color: white;
+
+    img {
+        width: 45px;
+        height: 45px;
+        margin-right: 8px;
+    }
+
+    i {
+        position: absolute;
+        right: 15px;
+        -webkit-transition-duration: 0.3s;
+        -moz-transition-duration: 0.3s;
+        -o-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+    }
+
+    .cdi-rotate {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+
+    }
+
+}
+
+.options-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    display: none;
+    z-index: 1;
+    background: white;
+    box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);
+}
+
+.options-list-hide {
+    display: none;
+
+    i {
+        rotate: 0deg;
+    }
+}
+
+.options-list-show {
+    display: block;
+    z-index: 9;
+}
+
+.options-list li {
+    padding: 8px;
+    display: block;
+    align-items: center;
+    cursor: pointer;
+}
+
+.options-list li:hover {
+    background-color: #f0f0f0;
+}
+
+.options-list img {
+    width: 45px;
+    height: 45px;
+    margin-right: 8px;
+}
+
+.dropdown-container {
+    margin-bottom: 15px;
+}
+
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {}
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {}
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (min-width: 992px) {}
+
+
+// tablet size
+@media (max-width: 991px) {}
+
+/* small mobile :320px. */
+@media (max-width: 767px) {}
+
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}

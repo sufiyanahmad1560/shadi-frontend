@@ -1,0 +1,20 @@
+#prescriptionModal {
+    .modal-header-logo {
+        height: 60px;
+    }
+
+    .modal-header-heading {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .pm_address {
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .separator {
+        height: 3px solid;
+    }
+}
